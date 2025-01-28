@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - main
+      - master
     paths-ignore:
       - 'helm/**'
       - 'k8s/**'
@@ -89,4 +89,3 @@ jobs:
         git add helm/go-web-app-chart/values.yaml
         git commit -m "Update tag in Helm chart"
         git push
-        
